@@ -52,8 +52,7 @@ python run.py
 - Enter the second key (a keyword) in the "Second Key" field.
 - Enter the passage you want to encrypt or decrypt in the "Passage" field.
 - Click "Encrypt" to encrypt the passage or "Decrypt" to decrypt the passage.
-- The results will be displayed in the "Result" field, along with the generated alphabet and lines used for the Vigenere cipher.
-
+- The results will be displayed in the "Result" field, along with the generated alphabet and lines used for the Vigenere cipher. All output can be select and copy.
 
 ## Resources
 - The project is inspired by a [Youtube video by LEMMiNO](https://youtu.be/jVpsLMCIB0Y?si=ZF-hhTSyXFATFKFZ)
@@ -72,8 +71,10 @@ YQTQUXQBQVYUVLLTREVJYQTMKYRDMFD
 - Decrypted Text
 ```
 BETWEENSUBTLESHADINGANDTHEABSENCEOFLIGHTLIESTHENUANCEOFIQLUSION
-
-BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT LIES THE NUANCE OF IQLUSION.
+```
+- Decrypted Text  With Spaces
+```
+BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT LIES THE NUANCE OF IQLUSION
 ```
 ![Withdraw Page](fig/k1.png)
 
@@ -104,12 +105,15 @@ LANGLEYKNOWABOUTTHISTHEYSHOULDITSBURIEDOUTTHERESOMEWHEREXWHOKNOWSTHEEXACT
 LOCATIONONLYWWTHISWASHISLASTMESSAGEXTHIRTYEIGHTDEGREESFIFTYSEVENMINUTES
 SIXPOINTFIVESECONDSNORTHSEVENTYSEVENDEGREESEIGHTMINUTESFORTYFOURSECONDSWEST
 IDBYROWS
-
+```
+- Decrypted Text  With Spaces and Symbols
+```
 IT WAS TOTALLY INVISIBLE HOW'S THAT POSSIBLE?
 THEY USED THE EARTH'S MAGNETIC FIELD. THE INFORMATION WAS GATHERED AND TRANSMITTED UNDERGROUND TO AN UNKNOWN LOCATION.
 DOES LANGLEY KNOW ABOUT THIS? THEY SHOULD. IT'S BURIED OUT THERE SOMEWHERE. WHO KNOWS THE EXACT LOCATION? ONLY W.W. THIS WAS HIS LAST MESSAGE:
 THIRTY-EIGHT DEGREES FIFTY-SEVEN MINUTES SIX POINT FIVE SECONDS NORTH, SEVENTY-SEVEN DEGREES EIGHT MINUTES FORTY-FOUR SECONDS WEST. ID BY ROWS.
 ```
+
 ![Withdraw Page](fig/k2.png)
 
 ## Folder Structure
