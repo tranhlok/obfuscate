@@ -1,7 +1,8 @@
 # Obfuscate
 
-This application replicates the Vigenère cipher used in the famous [Kryptos Sculpture](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index.html). Users can input two keys and the desired passage to encrypt or decrypt text.
-
+This application replicates
+- Vigenère cipher used in the famous [Kryptos Sculpture](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index.html). Users can input two keys and the desired passage to encrypt or decrypt text.
+- Enigma: User can set the setting and decrypt/encrypt desired text.
 More encryption methods will be added in the future.
 
 ## Installation
@@ -47,17 +48,24 @@ pip install -r requirements.txt
 python run.py
 ```
 ### Using the GUI
-- Select the encryption technique from the dropdown menu.
+Select the encryption technique from the dropdown menu. 
+
+If Vigenère is Selected:
+
 - Enter the first key (a keyword) in the "First Key" field.
 - Enter the second key (a keyword) in the "Second Key" field.
 - Enter the passage you want to encrypt or decrypt in the "Passage" field.
 - Click "Encrypt" to encrypt the passage or "Decrypt" to decrypt the passage.
 - The results will be displayed in the "Result" field, along with the generated alphabet and lines used for the Vigenere cipher. All output can be select and copy.
 
+If Enigma is Selected:
+- Enter the settings and passage.
+- The encrypt/decrypt is the same due to the natural of the machine
 ## Resources
 - The project is inspired by a [Youtube video by LEMMiNO](https://youtu.be/jVpsLMCIB0Y?si=ZF-hhTSyXFATFKFZ)
 - [UCSD Solutions walkthrough for KRYPTOS K1-2-3](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index2.html)
-## Test Run
+- This explaination of [Enigma Machine](https://www.101computing.net/enigma-encoder/)
+## Test Run for Vigenère
 
 ### Kryptos K1
 - Keywords: KRYPTOS and PALIMPSEST
@@ -76,7 +84,7 @@ BETWEENSUBTLESHADINGANDTHEABSENCEOFLIGHTLIESTHENUANCEOFIQLUSION
 ```
 BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT LIES THE NUANCE OF IQLUSION
 ```
-![Withdraw Page](fig/k1.png)
+![Kryptos K1](fig/k1.png)
 
 ### Kryptos K2
 - Keywords: KRYPTOS and ABSCISSA
@@ -114,7 +122,31 @@ DOES LANGLEY KNOW ABOUT THIS? THEY SHOULD. IT'S BURIED OUT THERE SOMEWHERE. WHO 
 THIRTY-EIGHT DEGREES FIFTY-SEVEN MINUTES SIX POINT FIVE SECONDS NORTH, SEVENTY-SEVEN DEGREES EIGHT MINUTES FORTY-FOUR SECONDS WEST. ID BY ROWS.
 ```
 
-![Withdraw Page](fig/k2.png)
+![Kryptos K1](fig/k2.png)
+
+## Test Run for Enigma
+```
+rotors = ("I","II","III")
+reflector = "UKW-B"
+ringSettings ="ABC"
+ringPositions = "DEF" 
+plugboard = "AT BS DE FM IR KN LZ OW PV XY"
+```
+- Encrypted Text
+```
+DRTLLAANCZJLGZMICXSYRBNTNLLYGOXEABJPZHPOBLWMYJOWDCVHXYWRBAHGLWPUHKYQEVZVNNP```
+```
+- Decrypted Text
+```
+UNDERNEATHTHESURFACEHIDDENTRUTHSLINGERAWAITINGTHOSEBRAVEENOUGHTOUNCOVERTHEM
+```
+- Decrypted Text  With Spaces
+```
+UNDERNEATH THE SURFACE HIDDEN TRUTHS LINGER AWAITING THOSE BRAVE ENOUGH TO UNCOVER THEM
+```
+![Kryptos K1](fig/e1.png)
+![Kryptos K1](fig/e2.png)
+
 
 ## Folder Structure
 ```
