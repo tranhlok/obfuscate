@@ -1,8 +1,9 @@
 # Obfuscate
 
-This application replicates
-- Vigenère cipher used in the famous [Kryptos Sculpture](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index.html). Users can input two keys and the desired passage to encrypt or decrypt text.
-- Enigma: User can set the setting and decrypt/encrypt desired text.
+This application replicates the following text encryption processes:
+- Vigenère cipher used in the famous [Kryptos Sculpture](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index.html) on the grounds of the Central Intelligence Agency (CIA) headquarters. 
+- [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine).
+
 More encryption methods will be added in the future.
 
 ## Installation
@@ -61,10 +62,6 @@ If Vigenère is Selected:
 If Enigma is Selected:
 - Enter the settings and passage.
 - The encrypt/decrypt is the same due to the natural of the machine
-## Resources
-- The project is inspired by a [Youtube video by LEMMiNO](https://youtu.be/jVpsLMCIB0Y?si=ZF-hhTSyXFATFKFZ)
-- [UCSD Solutions walkthrough for KRYPTOS K1-2-3](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index2.html)
-- This explaination of [Enigma Machine](https://www.101computing.net/enigma-encoder/)
 ## Test Run for Vigenère
 
 ### Kryptos K1
@@ -126,11 +123,11 @@ THIRTY-EIGHT DEGREES FIFTY-SEVEN MINUTES SIX POINT FIVE SECONDS NORTH, SEVENTY-S
 
 ## Test Run for Enigma
 ```
-rotors = ("I","II","III")
-reflector = "UKW-B"
-ringSettings ="ABC"
-ringPositions = "DEF" 
-plugboard = "AT BS DE FM IR KN LZ OW PV XY"
+rotors: I II III
+reflector: UKW-B
+ringSettings: ABC
+ringPositions: DEF 
+plugboard: AT BS DE FM IR KN LZ OW PV XY
 ```
 - Encrypted Text
 ```
@@ -156,18 +153,22 @@ vigenere_cipher_app/
 │   ├── vigenere/              # Directory for the Vigenere cipher implementation
 │   │   ├── __init__.py        
 │   │   ├── vigenere.py        # Vigenere cipher logic (encryption, decryption, and helpers)
-│   └── another_encryption/    # Placeholder for another encryption method
+│   └── enigma/                # Directory for the Enigma Machine implementation
 │       ├── __init__.py       
-│       ├── another_encryption.py # Logic for another encryption method
+│       ├── enigma.py          # Logic for Enigma Machine
 ├── app/                       # Directory for the main application code
 │   ├── __init__.py            
 │   ├── main.py                # Main entry point for the PyQt5 application
-├── resources/                 # Directory for additional resources (configurations, utilities, etc.)
-│   └── __init__.py            
+├── fig/                       # Directory for additional supporting figures            
 ├── README.md                  # Documentation for the project
 ├── requirements.txt           # Lists all Python dependencies
 └── run.py                     # Script to run the application
 ```
+## Resources
+- The project is inspired by a [Youtube video by LEMMiNO](https://youtu.be/jVpsLMCIB0Y?si=ZF-hhTSyXFATFKFZ).
+- [UCSD Solutions walkthrough for KRYPTOS K1-2-3](https://mathweb.ucsd.edu/~crypto/Projects/KarlWang/index2.html).
+- This explaination of [Enigma Machine](https://www.101computing.net/enigma-encoder/).
+- Wiki pages of [Kryptos](https://en.wikipedia.org/wiki/Kryptos), [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine), [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher).
 
 ```
 

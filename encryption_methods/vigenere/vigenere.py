@@ -17,7 +17,6 @@ def clean_input(text):
     return ''.join(filter(str.isalpha, text)).upper()
 
 def encrypt_passage(passage, alphabet, lines, key):
-    key_indices = [alphabet.index(k) for k in key]
     result = []
     key_length = len(key)
     for i, char in enumerate(passage):
@@ -30,7 +29,6 @@ def encrypt_passage(passage, alphabet, lines, key):
     return result
 
 def decrypt_passage(passage, alphabet, lines, key):
-    key_indices = [alphabet.index(k) for k in key]
     result = []
     key_length = len(key)
     for i, char in enumerate(passage):
